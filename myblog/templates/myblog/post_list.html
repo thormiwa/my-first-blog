@@ -4,7 +4,7 @@
 {% for blog in blogs %}
     <article class="post">
     <time class="date">
-        {{ blog.published_date|date: 'Y-m-d H:i' }}
+        {{ blog.published_date|date:'Y-m-d H:i' }}
     </time>
     <h2><a href="{% url 'post_detail' pk=blog.pk %}">{{ blog.title }}</a></h2>
     <p>{{ blog.text|linebreaksbr }}</p>
