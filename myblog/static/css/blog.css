@@ -1,5 +1,3 @@
-@media (max-width: 768px) {
-
 h1 a, h2 a {
     color: firebrick;
     font-family: 'lobster';
@@ -75,5 +73,4 @@ h4 {
 .btn-default:hover {
     color: #FFFFFF;
     background-color: #C25100;
-}
 }
