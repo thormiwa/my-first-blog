@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,3 +22,18 @@
         </article>
     </body>
 </html>
+=======
+{% extends 'myblog/base.html' %}
+
+{% block content %}
+{% for blog in blogs %}
+    <article class="post">
+    <time class="date">
+        {{ blog.published_date }}
+    </time>
+    <h2><a href="{% url 'post_detail' pk=blog.pk %}">{{ blog.title }}</a></h2>
+    <p>{{ blog.text|linebreaksbr }}</p>
+    </article>
+{% endfor %}
+{% endblock %}
+>>>>>>> aec4361336f89fe76bd21f31208b6effcc7c322f
